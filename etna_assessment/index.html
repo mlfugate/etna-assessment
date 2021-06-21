@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etna Interactive Skills Assessment</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/9aac9c353f.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img id="logo" src="etna-logo1.png" />
+        <br/>
+        <div class="title">COSMETIC SURGERY PRACTICE</div>
+        </div>
+        <nav class="top-nav">
+        <div class="desktop-nav">
+            <a href="">Home</a>
+            <a href="">|</a>
+            <a href="">Specials & Events</a>
+            <a href="">|</a>
+            <a href="">Patient Portal</a>
+            <a href="">|</a>
+            <a href="">Blog</a>
+        </div>
+        <div id="location">San Francisco, CA: <span id="phone-color">(800) 123-4567</span></div>    
+        <a href=""><i class="fas fa-bars"></i></a>
+            <div class="burger-menu">
+                <a href="">Home</a>
+                <a href="">Specials & Events</a>
+                <a href="">Patient Portal</a>
+                <a href="">Blog</a>
+            </div> 
+    </nav>
+    </header>
+    <main>
+        <nav class="second-nav">
+            <a href="">ABOUT US</a>
+            <a href="">BREAST</a>
+            <a href="">BODY</a>
+            <a href="">FACE</a>
+            <a href="">NONSURGICAL</a>
+            <a href="">TESTIMONIALS</a>
+            <a href="">PHOTO GALLERY</a>
+            <a href="">CONTACT US</a>
+        </nav>
+        <div class="request-banner">
+            <img id="sunglasses" src="https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"/>
+            <div class="request-title">
+                <div>Lorem Ipsum Dolor Sit Amet</div>
+                <button class="consult-btn">REQUEST A CONSULTATION ></button>
+             </div>
+        </div>
+        <div class="learn-more-banner">
+            <img id="learn-more-img" src="white-grid.jpeg"/>
+            <div>H1:Lorem ipsum dolor sit amet</div>
+                <p>Vestibulum nisi quam, interdum et condimentum non, vestibulum vel quam. Morbi tempor <br/>ornare lectus, eu suscipit risus dapibus ac. Aenean id diam a erat elementum sagittis. Aenean <br/>sem nisi, vitae semper augue. Aliquam in ipsum sit amet ante pharetra faucibus</p>
+            <button class="learn-btn">LEARN MORE ></button>
+        </div>
+        <div class="feature-container">
+            <div class="feature">
+                <img class="feature-img" src="etna-image.png"/>
+                <h3>H3: Feature or Product Category</h3>
+                <div>Brand Name or Feature Benefit</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur ametes adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <button class="learn-btn">LEARN MORE ></button>
+            </div>
+            <div class="feature">
+                <img class="feature-img" src="etna-image.png"/>
+                <h3>H3: Feature or Product Category</h3>
+                <div>Brand Name or Feature Benefit</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur ametes adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <button class="learn-btn">LEARN MORE ></button>
+            </div>
+            <div class="feature">
+                <img class="feature-img" src="etna-image.png"/>
+                <h3>H3: Feature or Product Category</h3>
+                <div>Brand Name or Feature Benefit</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur ametes adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <button class="learn-btn">LEARN MORE ></button>
+            </div>
+        </div>
+        <div class="practitioner-banner">
+            <img class="silhouette-img" src="silhouette.png"/>
+            <div class="nurse-div">
+                <h1>H1: Our Nurse Practitioners</h1>
+                <p>Vestibulum nisi quam, interdum et condimentum non, vestibulum vel <br/>quam. Morbi tempor ornare lectus, eu suscipit risus dapibus ac. Aenean id <br/>diam a erat elementum sagittis. Aenean sem nisi, vitae semper augue.<br/> Aliquam in ipsum sit amet ante pharetra faucibus</p>
+                <button class="consult-btn2">REQUEST A CONSULTATION ></button>
+                <div class="badge-container">
+                    <img class="badge-img" src="badge.png"/>
+                    <img class="badge-img" src="badge.png"/>
+                    <img class="badge-img" src="badge.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="contact-banner">
+            <div class="contact-form-container">
+                <div class="form-title">
+                    <h3>H1: Contact Us</h3>
+                    <div>Fields marked * are required</div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" id="fname" placeholder="First Name*">
+                    <input type="text" id="lname" placeholder="Last Name*">
+                    <input type="text" id="email" placeholder="Email*">
+                    <input type="text" id="phone" placeholder="Phone">
+                    <input type="text" id="zipcode" placeholder="Zipcode*">
+                    <select id="procedure" name="procedure">
+                        <option value="procedure-of-interest">Procedure of interest*</option>
+                        <option value="face-lift">Face Lift</option>
+                        <option value="breast-augmentation">Breast Augmentation</option>
+                        <option value="neuromodulators">Neuromodulators</option>
+                        <option value="skin-resurfacing">Skin Resurfacing</option>
+                    </select>
+                    <textarea id="help" placeholder="How can we help?"></textarea>
+                </form>
+                <div class="accept-container">
+                    <div id="accept"><input type="checkbox" id="checkbox"> I accept <a href="" id="terms">Terms of Use</a>*</div>
+                    <button class="submit-btn">Slide right to submit this form</button>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div class="info-container">
+            <img class="map-img" src="map-img.png">
+            <div class='business-info'>
+                <div>John Smith, MD</div>
+                <div>1234 Anystreet Dr.</div>
+                <div>San Francisco, CA 94104</div>
+                <div>Phone: <span id="phone-color">(800) 123-4567</span></div>
+                <div>Phone: (800) 321-7654</div>
+                <div>Monday-Friday: 8 a.m.-5 p.m.</div>
+            </div>
+            <div class="copyright">
+                <div class="icon-container">
+                    <img class="fbook" src="facebook-16.png">
+                    <img class="twitter" src="twitter-16.png">
+                    <img class="instagram" src="instagram-16.png">
+                    <img class="youtube" src="youtube-16.png">
+                </div>
+                <div class="copy-div">Copyright 2017 John Smith, MD. All rights reserved.</div>
+                <div>Medical Website Design and Marketing by <span id="phone-color">Etna Interactive</span></div>
+            </div>
+        </div> 
+        <div class="bottom-footer">
+            <hr>
+            <div class="disclaimer">
+                <div>Keep in mind that each patient is unique and your results may vary.</div>
+                <div>Nulla dapibus a mauris commodo vel ultricies dolor dictum. Morbi vestibulum aliquet sapien, ac viverra risus scelerisque eu. Cras a velit enim, quic luctus mauris. Maecenas convallis facilisis veneatis. Sed quis eros sed lorem venenatis ultricies. Quisque ipsum mauris, pretium a vehicula a, varius non nulla. Mauris auctor consequat interdum.</div>
+                <div>
+                <div class="bottom-nav">
+                    <div>HIPAA Privacy Policy</div>
+                    <div>|</div>
+                    <div>Related Resources</div>
+                    <div>|</div>
+                    <div>Site Map</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>

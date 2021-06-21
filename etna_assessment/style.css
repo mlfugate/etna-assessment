@@ -1,0 +1,522 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+header {
+    display: flex;
+    background-color: rgb(83, 87, 93);
+    height: 110px;
+    color: whitesmoke;
+    font-weight: lighter;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 250px;
+    padding-right: 250px;
+    flex-shrink: 1;
+}
+.logo {
+    display: flex;
+    align-items: center; 
+}
+#logo {
+    height: 175px;
+    width: 175px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 20px;
+    color: white;
+    width: 250px;
+}
+.top-nav {
+    padding: 20px;
+    flex-shrink: 1;
+}
+.top-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+.burger-menu {
+    display: none;
+}
+.fa-bars {
+    display: none;
+}
+#location {
+    font-size: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+#phone-color {
+    color: rgb(122,205,72);
+}
+
+.second-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(122,205,72);
+    height: 40px;
+    padding-left: 250px;
+    padding-right: 250px;
+
+}
+.second-nav a {
+    text-decoration: none;
+    color: white;
+}
+.request-banner {
+    height: 375px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(83, 87, 93, 0.9);
+}
+#sunglasses {
+    height: 375px;
+    width: 60%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin: auto;
+    z-index: -1;
+    position: absolute;
+}
+.request-banner div {
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+.request-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.consult-btn {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: white;
+    font-size: 12px;
+    padding: 12px 10px 12px 10px;
+    margin-top: 25px;
+}
+.learn-more-banner {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    text-align: center;
+}
+#learn-more-img {
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: .5;
+}
+.learn-more-banner div {
+    font-size: 32px;
+    color:rgb(83, 87, 93);
+    padding-top: 50px;
+}
+.learn-more-banner p {
+    line-height: 1.6;
+    font-size: 16px;
+    padding-top: 15px;
+    margin: auto;
+}
+.learn-btn {
+    width: 275px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(122,205,72);
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 14px 10px 14px 10px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.feature-container {
+    display: flex;
+    height: 425px;
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 35px;
+    justify-content: center;
+    
+}
+.feature {
+   width: 275px;
+   margin: 15px;
+   text-align: center;
+}
+.feature-img {
+    width: 100%;
+}
+.feature h3 {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.feature div {
+    color: rgb(122,205,72);
+    font-style: italic;
+    font-size: 14px;
+    padding: 10px;
+}
+.feature p {
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+.silhouette-img {
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    position: absolute;
+}
+.practitioner-banner {
+    color: whitesmoke;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nurse-div{
+    height: 400px;
+    margin-left: 20%;
+}
+.nurse-div h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 50px;
+    padding-left: 15px;
+}
+.nurse-div p{
+    font-size: 12px;
+    line-height: 1.6;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.badge-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.badge-img {
+    height: 140px;
+    width: 140px;
+    flex-shrink: 1;
+    margin-left: -25px;
+}
+.consult-btn2 {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: white;
+    font-size: 12px;
+    padding: 12px 10px 12px 10px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.contact-banner{
+    height: 375px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.contact-form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 350px 350px;
+    grid-gap: 15px;
+    grid-template-rows: 30px;
+}
+.contact-form > * {
+    border: none;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+#fname {
+    grid-column: 1;
+}
+#lname {
+    grid-column: 1;
+}
+#email {
+    grid-column: 1;
+}
+#phone {
+    grid-column: 1;
+}
+#zipcode {
+    grid-column: 1;
+}
+#procedure {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 10px;
+}
+#help {
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    margin-left: 10px;
+    resize: none;
+}
+
+.form-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.form-title h3{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.form-title div {
+    font-style: italic;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.submit-btn {
+    width: 340px;
+    background-color: rgb(122,205,72);
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+    float: right;
+}  
+.accept-container {
+    display: flex;
+    justify-content: space-between;
+}
+#accept {
+    padding-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
+}
+#checkbox {
+    color: white;
+}
+#terms {
+    text-decoration: none;
+    color: rgb(122,205,72);
+}
+
+footer{
+    height: 350px;
+    background-color: rgb(83, 87, 93);
+    color: white;
+    font-weight: bolder;
+}
+.map-img {
+    height: 125px;
+    width: 200px;
+    margin-top: 25px;
+}
+.info-container {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    height: 50%;
+}
+.business-info{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px
+}
+.business-info div{
+    padding-bottom: 8px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.icon-container img{
+    margin-top: 20px;
+    padding: 5px;
+}
+.copy-div {
+    margin-top: 10px;
+    padding: 5px;
+}
+.bottom-footer {
+    font-size: 12px;
+    height: 50%;
+}
+
+.bottom-nav {
+    display: flex;
+}
+.bottom-nav div {
+    padding: 5px;
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.disclaimer div {
+   margin-top: 10px; 
+   padding-top: 5px;
+   line-height: 1.6;
+}
+
+
+@media only screen and (max-width: 600px)  {
+
+body {
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    height: fit-content;
+    align-content: space-between;
+    background-color: rgb(83, 87, 93);
+    color: whitesmoke;
+    font-weight: lighter;
+    padding-left: 0;
+    padding-right: 0;
+}
+.location{ 
+    display: none;
+}
+#location {
+    display: none;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+#logo {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.title {
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    width: 250px;
+}
+.desktop-nav {
+    display: none;
+}
+.fa-bars{
+    display: flex; 
+}
+.burger-menu.active{
+    display: none;
+    display: flex;
+    flex-direction: column;
+}
+#phone-color {
+    color: rgb(122,205,72);
+}
+.second-nav {
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(122,205,72);
+    height: 2rem;
+    width: 100vw;
+    font-size: .4rem;
+
+}
+.second-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0rem .5rem 0rem .5rem;
+}
+
+.sunglasses {
+    display: hidden;
+    background-color: whitesmoke;
+}
+.feature-container {
+    height: fit-content;
+}
+.silhouette-img {
+    display: none;
+}
+.practitioner-banner {
+    background-color: rgb(83, 87, 93, 0.9);
+}
+
+.practitioner-banner {
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    width: auto;
+}
+.nurse-div {
+    width: fit-content;
+    margin-left: 0;
+    margin: auto;
+}
+#procedure {
+    margin-left: 0px;
+}
+.contact-banner {
+    height: fit-content;
+    width: 100vw;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-from-container {
+    margin-left: 10vw;
+}
+.form-title {
+    flex-direction: column;
+    text-align: center;
+}
+#help {
+    margin-left: 0px;
+    resize: none;
+}
+.accept-container {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+footer {
+    height: fit-content;
+}
+}
+
+
+
+
+
+    
+
+ 
+
+ 
+
+    
+
+   
